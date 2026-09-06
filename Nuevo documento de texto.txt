@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Memorias | Lovely Lens Style</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <div class="container">
+    <header class="header">
+      <h1 class="title">Lovely Lens</h1>
+      <p class="subtitle">Crea tu página de memorias personalizada</p>
+    </header>
+
+    <main class="card">
+      <form id="memoryForm">
+        <div class="form-group">
+          <label for="pageTitle">Título del Recuerdo</label>
+          <input type="text" id="pageTitle" placeholder="Ej: Nuestra Historia de Amor" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje Especial</label>
+          <textarea id="message" rows="4" placeholder="Escribe aquí tu dedicatoria..." required></textarea>
+        </div>
+
+        <div class="button-group">
+          <button type="button" class="btn btn-secondary" id="previewBtn">??? Vista Previa</button>
+          <button type="submit" class="btn btn-primary" id="saveBtn">? Guardar Memoria</button>
+        </div>
+      </form>
+
+      <div id="previewCard" class="preview-card hidden">
+        <h2 id="prevTitle"></h2>
+        <p id="prevMessage"></p>
+      </div>
+
+      <section class="qr-section">
+        <h3>Tu Código QR en Tiempo Real</h3>
+        <p class="qr-description">Escanea para actualizar la hora actual:</p>
+
+        <div class="qr-wrapper">
+          <div id="qrcode"></div>
+        </div>
+
+        <div class="time-display">
+          <span class="clock-icon">??</span>
+          <span id="clock">00:00:00</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

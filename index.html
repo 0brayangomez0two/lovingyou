@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Nuestra Historia de Amor ❤️</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Luces de fondo -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <div class="container">
+    
+    <!-- Encabezado Principal -->
+    <header class="hero">
+      <h1 class="romantic-title">Nuestra Historia</h1>
+      <p class="subtitle">Cada segundo a tu lado es mi momento favorito</p>
+    </header>
+
+    <!-- Reproductor Estilo Lovely Lens -->
+    <div class="music-card lovely-player">
+      <div class="player-top">
+        <div class="disc-container">
+          <img src="LOGO.jpeg" alt="Portada" id="songDisc" class="song-disc">
+        </div>
+        <div class="song-details">
+          <p class="song-title">Creo</p>
+          <p class="song-artist">Callejeros</p>
+        </div>
+        <button id="playMusicBtn" class="play-btn-circle" aria-label="Reproducir">
+          <span id="playIcon">▶</span>
+        </button>
+      </div>
+
+      <!-- Barra de progreso -->
+      <div class="progress-container" id="progressContainer">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="time-stamps">
+        <span id="currentTime">0:00</span>
+        <span id="durationTime">0:00</span>
+      </div>
+
+      <!-- Audio de Callejeros - Creo -->
+      <!-- Audio Local de Callejeros - Creo -->
+      <audio id="bgMusic" preload="metadata">
+        <source src="creo.mp3" type="audio/mpeg">
+        Tu navegador no soporta el reproductor de audio.
+      </audio>
+    </div>
+
+    <!-- Contador de Tiempo Transcurrido -->
+    <section class="counter-section">
+      <h2>Tiempo Juntos</h2>
+      <div class="counter-grid">
+        <div class="time-box"><span id="years">0</span><label>Años</label></div>
+        <div class="time-box"><span id="months">0</span><label>Meses</label></div>
+        <div class="time-box"><span id="days">0</span><label>Días</label></div>
+        <div class="time-box"><span id="hours">0</span><label>Horas</label></div>
+        <div class="time-box"><span id="minutes">0</span><label>Minutos</label></div>
+        <div class="time-box"><span id="seconds">0</span><label>Segundos</label></div>
+      </div>
+    </section>
+
+    <!-- Galería Deslizante (Carrusel de Fotos) -->
+    <section class="gallery-section">
+      <h2>Nuestros Momentos</h2>
+      
+      <div class="carousel-container">
+        <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Foto anterior">&#10094;</button>
+
+        <div class="carousel-track-container">
+          <ul class="carousel-track" id="carouselTrack">
+            
+            <li class="carousel-slide active">
+              <img src="PRIMERDIA.jpg" alt="Momento 1">
+              <p class="photo-caption">Nuestros primeros dias</p>
+            </li>
+            
+            <li class="carousel-slide">
+              <img src="MOMENTOX1.jpg" alt="Momento 2">
+              <p class="photo-caption"></p>
+            </li>
+            
+            <li class="carousel-slide">
+              <img src="ESPERA.jpg" alt="Momento 3">
+              <p class="photo-caption">Esperando trenes</p>
+            </li>
+
+            <li class="carousel-slide">
+              <img src="MAGIC.jpg" alt="Momento 4">
+              <p class="photo-caption">Momentos magicos</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="PASEOS.jpg" alt="Momento 5">
+              <p class="photo-caption">paseos en familia</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="CITA.jpg" alt="Momento 6">
+              <p class="photo-caption">citas</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="CITAS2.jpg" alt="Momento 7">
+              <p class="photo-caption"></p>
+            <li class="carousel-slide">
+              <img src="LABUROS.jpg" alt="Momento 8">
+              <p class="photo-caption">Changuitas</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="ñoquis.jpg" alt="Momento 9">
+              <p class="photo-caption">ñoquis</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="MOMEN.jpg" alt="Momento 10">
+              <p class="photo-caption"></p>
+            <li class="carousel-slide">
+              <img src="PLAYA.jpg" alt="Momento 11">
+              <p class="photo-caption"></p>
+            </li>
+            <li class="carousel-slide">
+              <img src="CATEDRAL.jpg" alt="Momento 12">
+              <p class="photo-caption"></p>
+            </li>
+            <li class="carousel-slide">
+              <img src="COMPAÑA.jpg" alt="Momento 13">
+              <p class="photo-caption">vos haciendome compañia siempre</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="siempre.jpg" alt="Momento 14">
+              <p class="photo-caption">siempre</p>
+            <li class="carousel-slide">
+              <img src="x.jpg" alt="Momento 15">
+              <p class="photo-caption"></p>
+            </li>
+            <li class="carousel-slide">
+              <img src="K.jpg" alt="Momento 16">
+              <p class="photo-caption"></p>
+            </li>
+            <li class="carousel-slide">
+              <img src="di.jpg" alt="Momento 17">
+              <p class="photo-caption"></p>
+            </li>
+            <li class="carousel-slide">
+              <img src="amor.jpg" alt="Momento 18">
+              <p class="photo-caption">Te amo</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="xsi.jpg" alt="Momento 19">
+              <p class="photo-caption">por siempre y para siempre</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="sisi.jpg" alt="Momento 20">
+              <p class="photo-caption">tan hermosa vas a ser</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="bom.jpg" alt="Momento 21">
+              <p class="photo-caption">Bombona</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="aa.jpg" alt="Momento 22">
+              <p class="photo-caption"></p>
+            </li>
+            <li class="carousel-slide">
+              <img src="hermosa.jpg" alt="Momento 23">
+              <p class="photo-caption">hermosa</p>
+            </li>
+            <li class="carousel-slide">
+              <img src="mivida.jpg" alt="Momento 23">
+              <p class="photo-caption"><3</p>
+            </li>
+          </ul>
+        </div>
+
+        <button class="carousel-btn next-btn" id="nextBtn" aria-label="Foto siguiente">&#10095;</button>
+      </div>
+
+      <div class="carousel-nav" id="carouselNav"></div>
+    </section>
+
+    <!-- Carta o Texto Especial -->
+    <section class="letter-card">
+      <h2>Te amo</h2>
+      <p class="letter-text">
+        Te amo de mil formas y maneras, incluso en los momentos que menos esperas que te quiera al lado mio, incluso si mi cuerpo se transforma en cenizas seguire amandote hasta la eternida, hasta el infinito y mas alla, te amo tanto que daria mi vida entera por verte feliz, te amo hoy, te ame ayer, te amare mañana y te amare siempre.
+      </p>
+    </section>
+
+    <!-- Botón Interactivo / Sorpresa -->
+    <section class="action-section">
+      <button id="loveBtn" class="btn btn-primary">💖</button>
+      <div id="surpriseMessage" class="surprise-box hidden">
+        sos todo lo que quiero en mi vida
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
